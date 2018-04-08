@@ -1,6 +1,14 @@
 # exports & module.exports
 
-## 明确值类型和引用类型
+exports 和 module.exports 是NodeJS中的模块对象
+
+> require: node 和 es6 都支持的引入
+>
+> export / import : 只有es6 支持的导出引入
+>
+> module.exports / exports: 只有 node 支持的导出
+
+## 知晓值类型和引用类型
 
 基本类型 (primitive values): 包括Undefined, Null, Boolean, Number和String五种基本数据类型;
 
