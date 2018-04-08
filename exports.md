@@ -2,7 +2,8 @@
 
 ## 明确值类型和引用类型
 
-基本类型 (primitive values): 包括Undefined, Null, Boolean, Number和String五种基本数据类型；
+基本类型 (primitive values): 包括Undefined, Null, Boolean, Number和String五种基本数据类型;
+
 引用类型 (reference values): 保存在内存中的对象们，不能直接操作，只能通过保存在变量中的地址引用对其进行操作。
 
 示例:
@@ -11,39 +12,39 @@
 // 值类型
 var a = 123
 var b = a
-console.log(a)
-console.log(b)
+console.log(a)  // 123
+console.log(b)  // 123
 
 b = 456
-console.log(a)
-console.log(b)
+console.log(a)  // 123
+console.log(b)  // 456
 
 // 引用类型
 var c = { name: 'ABC' }
 var d = c
-console.log(c)
-console.log(d)
+console.log(c)  // { name: 'ABC' }
+console.log(d)  // { name: 'ABC' }
 
 d.name = 'new name'
-console.log(c)
-console.log(d)
+console.log(c)  // { name: 'new name' }
+console.log(d)  // { name: 'new name' }
 
 d = { name: 'new reference' }
-console.log(c)
-console.log(d)
+console.log(c)  // { name: 'new name' }
+console.log(d)  // { name: 'new reference' }
 
 d.name = 'new reference ABC'
-console.log(c)
-console.log(d)
+console.log(c)  // { name: 'new name' }
+console.log(d)  // { name: 'new reference ABC' }
 
 // 如果上面的理解了自测一下
 var o = { a: 1}
 var b = o
 var c = { b: 2 }
-console.log(b) // => {a: 1}
+console.log(b)  // => {a: 1}
 b = c;
-console.log(b) //{b: 2}
-console.log(o)//{a: 1}
+console.log(b)  //{b: 2}
+console.log(o)  //{a: 1}
 ```
 
 说明: `d.name = 'new name'` 和 `d = { name: 'new reference' }` 前者是修改引用地址中的值，凡是引用此地址的值都是共有的，所以引用类型数据改变所有引用此地址的值都会改变。后者则是将变量`d`指向了一个新的引用地址，这意味着和它和原来的引用已经失去了所有联系。
