@@ -149,7 +149,9 @@ module.exports = function() {
 // module.exports = Array
 ```
 
-![exports_1][doc/exports_1.png]
+![exports_1](./doc/exports_1.png)
+
+![exports_2](./doc/exports_2.png)
 
 [node_exports]: http://nodejs.cn/api/modules.html#modules_exports_shortcut
 [node_module_exports]: http://nodejs.cn/api/modules.html#modules_module_exports

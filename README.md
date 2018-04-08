@@ -2,4 +2,4 @@
 
 module理解
 
-[exports][./exports.md]
+[exports](./exports.md)
